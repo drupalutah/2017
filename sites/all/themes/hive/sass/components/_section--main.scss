@@ -1,0 +1,12 @@
+.l-page {
+  background-color: $main_bg;
+}
+
+.l-main {
+  padding-top: ($vspace * 2);
+  padding-bottom: ($vspace * 2);
+
+  .l-content {
+    position: relative; // this is for the local tasks.
+  }
+}

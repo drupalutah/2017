@@ -1,0 +1,22 @@
+.l-header {
+  padding: $vspace $hspace;
+  color: $header_fontcolor;
+  position: relative;
+  background: url(../images/header-comb.jpg) center center;
+
+  .container {
+    @include container;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.front .l-header {
+  position: relative;
+  padding: 5% $hspace;
+
+  .region-header {
+    text-align: center;
+    padding: 20px;
+  }
+}

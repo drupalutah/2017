@@ -1,0 +1,48 @@
+.block-superfish .content {
+  @include clearfix;
+}
+
+ul.sf-main-menu,
+ul.sf-main-menu li,
+ul.sf-main-menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul.sf-main-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $menu;
+    background-color: $menu_bg;
+  }
+
+  &:hover,
+  &:focus {
+    color: $menu_hover;
+    background-color: $menu_bg_hover;
+  }
+
+  &:active,
+  &.active {
+    color: $menu_active;
+    background-color: $menu_bg_active;
+  }
+}
+ul.sf-main-menu li.active-trail > a {
+  &:link,
+  &:visited {
+    color: $menu_active;
+    background-color: $menu_bg_active;
+  }
+}
+ul.sf-main-menu ul {
+  background-color: $color-complement-1;
+
+  li a {
+  }
+}
+

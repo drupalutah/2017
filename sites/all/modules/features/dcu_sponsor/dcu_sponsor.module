@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DCU Sponsor feature.
+ */
+
+include_once 'dcu_sponsor.features.inc';

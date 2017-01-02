@@ -1,0 +1,37 @@
+.tabs--primary-wrapper {
+
+}
+ul.tabs--primary {
+	text-align: left;
+	// font-size: 0.8em;
+	background-color: $tabs_primary_bg;
+	margin: 0;
+	padding: 10px 0 20px 0;
+
+	li {
+		list-style: none;
+		margin: 0 15px 0 0;
+		padding: 0;
+		display: inline-block;
+
+		a {
+			display: block;
+			padding: 2px 25px;
+			@include linkme($tabs_primary_text, $tabs_primary_text_active);
+			border-bottom: solid 1px $tabs_primary_text;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: $tabs_primary_bg_active;
+				border-bottom-color: $tabs_primary_text_active;
+				background-color: $tabs_primary_bg_hover;
+			}
+			&.active {
+				color: $tabs_primary_text_active;
+				border-bottom-color: $tabs_primary_text_active;
+				background-color: $tabs_primary_bg_active;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+  .l-branding {
+    text-align: center;
+    // padding-bottom: 20px;
+  }
+
+.event-date,
+.event-location {
+  display: inline-block;
+  padding: 10px 20px;
+  i {
+    color: $brand_gold;
+  }
+}
+
+.front .site-slogan {
+  margin: 20px 0;
+  padding: 10px;
+  letter-spacing: 5px;
+  color: #333;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}

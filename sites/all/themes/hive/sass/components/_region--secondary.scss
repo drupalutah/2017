@@ -1,0 +1,10 @@
+.l-secondary {
+  padding: ($vspace * 2) $hspace;
+  background-color: $secondary_bg;
+  color: $secondary_fontcolor;
+
+  .container {
+    @include container;
+    @include linkme($secondary_link, $secondary_link_hover, $secondary_link_active);
+  }
+}

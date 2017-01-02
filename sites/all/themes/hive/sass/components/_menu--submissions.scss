@@ -1,0 +1,17 @@
+#block-menu-menu-submissions {
+  ul {
+    margin: 10px 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 10px 0 0;
+      // margin: 20px;
+      list-style: none;
+      a {
+        display: inline-block;
+        border-top: $brand_gold solid 1px;
+        border-bottom: $brand_gold solid 1px;
+      }
+    }
+  }
+}

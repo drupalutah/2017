@@ -1,0 +1,15 @@
+.view.sponsors-platinum {
+  .item-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  li.sponsor-row {
+    flex: 1 1 33.3%;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+  }
+
+}

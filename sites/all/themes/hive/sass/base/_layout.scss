@@ -1,0 +1,96 @@
+.l-header,
+.l-main,
+.l-footer {
+  @include clearfix();
+}
+
+@include breakpoint($xsmall) {}
+
+@include breakpoint($small) {}
+
+@include breakpoint($medium) {
+  // Two Sidebars.
+  .two-sidebars {
+    .l-content {
+      @include span(isolate 6 at 4);
+    }
+    .region-sidebar-first {
+      @include span(3);
+    }
+    .region-sidebar-second {
+      @include span(last 3);
+    }
+  }
+  // Left/First Sidebar.
+  .one-sidebar.sidebar-first {
+    .l-content {
+      @include span(last 8);
+    }
+    .region-sidebar-first {
+      @include span(4);
+    }
+  }
+
+  // Right/Second Sidebar.
+  .one-sidebar.sidebar-second {
+    .l-content {
+      @include span(8);
+    }
+    .region-sidebar-second {
+      @include span(last 4);
+    }
+  }
+
+  // HEADER regions.
+  .l-branding {
+    @include span(3);
+  }
+
+  .l-navigation {
+  }
+
+  .region-navigation {
+    @include container;
+  }
+
+  .region-header {
+    @include span(last 9);
+  }
+
+  .l-main {
+    @include container;
+  }
+
+  .l-branding {
+    @include span(12);
+  }
+
+  .front .region-header {
+    @include span(12);
+  }
+
+
+  // FOOTER Regions.
+  .l-footer .container {
+    @include container;
+  }
+  .region-footer {
+    @include span(12);
+  }
+  .region-footer-a {
+    @include span(3);
+  }
+  .region-footer-b {
+    @include span(3);
+  }
+  .region-footer-c {
+    @include span(3);
+  }
+  .region-footer-d {
+    @include span(last 3);
+  }
+}
+
+@include breakpoint($large) {}
+
+@include breakpoint($xlarge) {}

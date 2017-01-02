@@ -1,0 +1,15 @@
+name = CKEditor Defaults
+core = 7.x
+package = User Interface
+version = 7.x-1.0
+dependencies[] = ckeditor
+dependencies[] = ckeditor_link
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = imce
+features[ckeditor_profile][] = Advanced
+features[ckeditor_profile][] = CKEditor Global Profile
+features[ckeditor_profile][] = Full
+features[ckeditor_profile][] = minimal
+features[features_api][] = api:2
+features[filter][] = full_html
