@@ -3184,12 +3184,12 @@ a.tabledrag-handle .handle {
     margin-right: 1.69492%;
   }
   .one-sidebar.sidebar-second .l-content {
-    width: 66.10169%;
+    width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
   }
   .one-sidebar.sidebar-second .region-sidebar-second {
-    width: 32.20339%;
+    width: 23.72881%;
     float: right;
     margin-right: 0;
   }
@@ -3288,24 +3288,24 @@ td, th {
 }
 
 th {
-  background-color: #f5f5f5;
+  background-color: #fffbf0;
   vertical-align: bottom;
 }
 
 table.table-hover tr:nth-child(even):hover td {
-  background-color: #ededed;
+  background-color: #fff7e1;
 }
 
 table.table-hover tr:nth-child(odd):hover td {
-  background-color: transparent;
+  background-color: #e9eef1;
 }
 
 tr.even, tr:nth-child(even) {
-  background-color: #f5f5f5;
+  background-color: #fffbf0;
 }
 
 tr.odd, tr:nth-child(odd) {
-  background-color: transparent;
+  background-color: #f2f5f7;
 }
 
 body {
@@ -3332,6 +3332,15 @@ strong, b {
   font-weight: bold;
 }
 
+ul, ol {
+  margin-bottom: 1em;
+}
+
+ul li, ol li {
+  list-style-position: outside;
+  margin-left: 1em;
+}
+
 p {
   margin-bottom: 0.75em;
   line-height: 1.5em;
@@ -3342,12 +3351,13 @@ h1 {
   font-family: "Unica One", cursive;
   font-size: 1.75em;
   font-weight: 300;
+  line-height: 1.2em;
   margin-bottom: 0.55em;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 500;
+  margin-bottom: 0.55em;
 }
 
 h3 {
@@ -3362,7 +3372,7 @@ h2, h3, h4, h5, h6 {
   color: #325D77;
   font-family: "Unica One", cursive;
   font-weight: 300;
-  line-height: 1.25em;
+  line-height: 1.3em;
 }
 
 h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
@@ -3376,6 +3386,57 @@ h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hov
 
 h2 a:active, h2 a.active, h3 a:active, h3 a.active, h4 a:active, h4 a.active, h5 a:active, h5 a.active, h6 a:active, h6 a.active {
   color: #0F7A96;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+cite, q {
+  position: relative;
+  font-size: 0.95em;
+  font-style: italic;
+  font-weight: 300;
+  color: #404040;
+}
+
+cite {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 10px 0;
+}
+
+cite:before, cite:after {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 1px;
+  background: #cbcbcb;
+  content: " ";
+  margin-left: -10px;
+}
+
+cite:before {
+  top: 0;
+}
+
+cite:after {
+  bottom: 0;
+}
+
+code {
+  font-family: monospace;
 }
 
 footer a:link, footer a:visited {
@@ -3575,6 +3636,55 @@ ul.sf-main-menu ul {
   border-bottom: #BA8748 solid 1px;
 }
 
+.sponsor-table th {
+  text-align: center;
+  font-weight: bold;
+}
+
+.sponsor-table th .fa {
+  color: #915F21;
+}
+
+.sponsor-table th p {
+  line-height: 1em;
+}
+
+.sponsor-table th span {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+
+.sponsor-table td {
+  text-align: center;
+  width: 10%;
+  border-left: solid 4px #fff;
+}
+
+.sponsor-table td .fa {
+  font-size: 1.5em;
+  color: #325D77;
+}
+
+.sponsor-table td span {
+  color: #325D77;
+}
+
+.sponsor-table td:nth-child(1) {
+  text-align: left;
+  width: 60%;
+  border-left: none;
+}
+
+.sponsor-table .bigger {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.sponsor-table em {
+  font-size: 0.863em;
+}
+
 .ds-3col-stacked-fluid.node-session .group-right {
   padding: 10px;
   background-color: #819FB1;
@@ -3590,6 +3700,37 @@ ul.sf-main-menu ul {
 
 .paragraphs-item-text-and-google-map iframe {
   min-height: 275px;
+}
+
+.paragraphs-item-price-table .field-collection-container {
+  display: -webkit-box;
+  display: flex;
+  border-bottom: none;
+}
+
+.paragraphs-item-price-table .field-collection-container .field-name-field-column {
+  -webkit-box-flex: 1;
+          flex: 1 1 33%;
+  padding: 10px;
+}
+
+.paragraphs-item-price-table .field-collection-container .field-name-field-column ul li {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.paragraphs-item-price-table .field-collection-container .field-name-field-price {
+  font-size: 1.25em;
+  text-align: center;
+  border-top: solid 1px #325D77;
+  border-bottom: solid 1px #325D77;
+}
+
+.paragraphs-item-price-table .field-collection-container .field-collection-view {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
 }
 
 .l-branding {

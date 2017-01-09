@@ -1,0 +1,41 @@
+.sponsor-table {
+  th {
+    text-align: center;
+    font-weight: bold;
+    .fa {
+      color: $color-primary-3;
+    }
+    p {
+      line-height: 1em;
+    }
+    span {
+      font-size: 1.5em;
+      line-height: 1.25em;
+      letter-spacing: 1px;
+    }
+  }
+  td {
+    text-align: center;
+    width: 10%;
+    border-left: solid 4px #fff;
+    .fa {
+      font-size: 1.5em;
+      color: $color-complement-0;
+    }
+    span {
+      color: $color-complement-0;
+    }
+  }
+  td:nth-child(1) {
+    text-align: left;
+    width: 60%;
+    border-left: none;
+  }
+  .bigger {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  em {
+    font-size: 0.863em;
+  }
+}

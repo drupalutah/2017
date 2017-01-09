@@ -14,6 +14,11 @@ strong, b {
 }
 
 ul, ol {
+  margin-bottom: 1em;
+  li {
+    list-style-position: outside;
+    margin-left: 1em;
+  }
 }
 
 p {
@@ -27,13 +32,13 @@ h1 {
   font-family: $title_font;
   font-size: 1.75em;
   font-weight: $title_fontweight;
-  // line-height: 1em;
+  line-height: 1.2em;
   margin-bottom: 0.55em;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 500;
+  margin-bottom: 0.55em;
 }
 
 h3 {
@@ -48,10 +53,63 @@ h2, h3, h4, h5, h6 {
   color: $heading_fontcolor;
   font-family: $heading_font;
   font-weight: $heading_fontweight;
-  line-height: 1.25em;
+  line-height: 1.3em;
   a {
     @include linkme($title_fontcolor);
   }
+}
+
+em {
+  font-style: italic;
+}
+
+strike, s {
+
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+cite, q {
+      position: relative;
+    font-size: 0.95em;
+    font-style: italic;
+    font-weight: 300;
+    color: lighten($body_fontcolor, 5%);
+}
+
+cite {
+  display: inline-block;
+  text-align: center;
+  padding: $vspace $hspace;
+  margin: ($vspace/2) 0;
+  &:before,
+  &:after {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background: #cbcbcb;
+    content: " ";
+    margin-left: -10px;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+}
+
+code {
+  font-family: monospace;
 }
 
 

@@ -5,3 +5,30 @@
 .paragraphs-item-text-and-google-map iframe {
   min-height: 275px;
 }
+
+.paragraphs-item-price-table .field-collection-container {
+  display: flex;
+  border-bottom: none;
+  .field-name-field-column {
+    flex: 1 1 33%;
+    padding: 10px;
+    ul li {
+      list-style: none;
+      padding: 10px 0;
+      margin: 0;
+      // border-bottom: dotted 1px lightent($border_color, 10%);
+    }
+  }
+  .field-name-field-price {
+    font-size: 1.25em;
+    text-align: center;
+    border-top: solid 1px $border_color;
+    border-bottom: solid 1px $border_color;
+  }
+  .field-collection-view {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+}

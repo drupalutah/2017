@@ -34,10 +34,10 @@
   // Right/Second Sidebar.
   .one-sidebar.sidebar-second {
     .l-content {
-      @include span(8);
+      @include span(9);
     }
     .region-sidebar-second {
-      @include span(last 4);
+      @include span(last 3);
     }
   }
 
