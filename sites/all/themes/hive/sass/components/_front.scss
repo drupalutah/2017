@@ -1,0 +1,44 @@
+.front {
+  h1 {
+    text-align: center;
+  }
+  .field-name-body,
+  .tabs--primary-wrapper {
+    @include container;
+  }
+}
+
+.paragraphs-item-7 {
+  background-color: $color-complement-0;
+  color: #fff;
+  h2 {
+    color: $brand_gold;
+  }
+}
+
+.paragraphs-item-9 {
+  .icon {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    border-top: solid 1px $heading_fontcolor;
+    border-bottom: solid 1px $heading_fontcolor;
+  }
+  .field-name-field-icon-first {
+    color: $color-secondary-1-0;
+  }
+  .field-name-field-icon-second {
+    color: $color-complement-0;
+  }
+  .field-name-field-text-second .button {
+    @include button($color-complement-0);
+  }
+  .field-name-field-icon-third {
+    // color: $color-secondary-2-0;
+    color: $color-complement-4;
+  }
+  .field-name-field-text-third .button {
+    @include button($color-complement-4);
+  }
+}

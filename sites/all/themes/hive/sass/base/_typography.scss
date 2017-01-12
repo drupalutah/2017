@@ -13,11 +13,31 @@ strong, b {
   font-weight: bold;
 }
 
+.l-main {
+  ul li {
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGFBMVEUAAABERERERERERERERERERERERERERESMa+BPAAAAB3RSTlMAGjG+6/P1wTTolgAAACZJREFUCFtjYIAAJzBVrgAmi8AkmFNeHgAiywRAZCJIHMxkMARiALmpBpvY4YtZAAAAAElFTkSuQmCC);
+    line-height: 1.2em;
+    padding-bottom: 0.5em;
+  }
+}
+
 ul, ol {
   margin-bottom: 1em;
   li {
     list-style-position: outside;
     margin-left: 1em;
+  }
+}
+
+ul.links.inline {
+  display: block;
+  margin: 20px 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
   }
 }
 

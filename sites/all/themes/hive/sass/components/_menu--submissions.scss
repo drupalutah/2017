@@ -1,17 +1,31 @@
-#block-menu-menu-submissions {
+#block-menu-menu-submissions .content {
   ul {
     margin: 10px 0;
     padding: 0;
+    border-top: $brand_gold solid 1px;
     li {
-      display: inline-block;
-      padding: 0 10px 0 0;
-      // margin: 20px;
+      margin: 0;
+      padding: 0;
       list-style: none;
       a {
-        display: inline-block;
-        border-top: $brand_gold solid 1px;
+        display: block;
+        padding: 6px 10px;
         border-bottom: $brand_gold solid 1px;
+        @include linkme($body_fontcolor, $tabs_primary_text_active);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          background-color: $tabs_primary_bg_hover;
+        }
       }
     }
   }
+}
+
+#block-menu-menu-submissions {
+  background-color: $smoke;
+  border: solid 2px $brand_gold;
+  padding: 20px;
 }

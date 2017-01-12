@@ -3086,7 +3086,7 @@ button,
   text-transform: uppercase;
   text-shadow: none;
   font-size: 0.85em;
-  font-weight: bold;
+  font-weight: normal;
   outline: none;
   border: none;
   cursor: pointer;
@@ -3121,6 +3121,51 @@ button:hover, button:focus, button:active,
   background-color: #c1a65b;
 }
 
+.form-type-managed-file {
+  border: solid 1px #eee;
+  padding: 5px 15px;
+}
+
+.file-widget.form-managed-file {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.file-widget.form-managed-file .form-file {
+  width: 75%;
+}
+
+.file-widget.form-managed-file .form-submit {
+  width: 25%;
+  padding: 5px 10px;
+}
+
+.form-type-radios {
+  padding: 10px 20px;
+  border: solid 1px #eee;
+}
+
+.form-type-radios > label {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: solid 1px #eee;
+}
+
+.form-type-radio label {
+  font-size: 0.863em;
+}
+
+.filter-wrapper {
+  font-size: 0.75em;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.form-type-select .form-item > label {
+  font-weight: normal;
+  font-size: 0.863em;
+}
+
 a.tabledrag-handle {
   height: 22px;
   width: 20px;
@@ -3139,6 +3184,12 @@ a.tabledrag-handle .handle {
 
 .page-admin .form-actions {
   padding-top: 20px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 .l-header:before, .l-header:after,
@@ -3213,12 +3264,12 @@ a.tabledrag-handle .handle {
     float: right;
     margin-right: 0;
   }
-  .l-main {
+  .not-front .l-main {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
-  .l-main:after {
+  .not-front .l-main:after {
     content: " ";
     display: block;
     clear: both;
@@ -3273,6 +3324,437 @@ a.tabledrag-handle .handle {
   }
 }
 
+@media (min-width: 768px) {
+  .ds-1col > .inner {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ds-1col > .inner:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-2col-stacked-fluid template.
+  */
+  .ds-2col-stacked-fluid > .group-left {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-2col-stacked-fluid > .group-left {
+    float: right;
+  }
+  .ds-2col-stacked-fluid > .group-right {
+    float: right;
+    /* LTR */
+    width: 50%;
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-2col-stacked-fluid > .group-right {
+    float: left;
+  }
+  .ds-2col-stacked-fluid.group-one-column > .group-left,
+  .ds-2col-stacked-fluid.group-one-column > .group-right {
+    width: 100%;
+    float: none;
+  }
+  .ds-2col-stacked-fluid > .group-footer {
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-2col-stacked template.
+  */
+  .ds-2col-stacked > .group-left {
+    float: left;
+    /* LTR */
+    width: 50%;
+  }
+  [dir="rtl"] .ds-2col-stacked > .group-left {
+    float: right;
+  }
+  .ds-2col-stacked > .group-right {
+    float: right;
+    /* LTR */
+    width: 50%;
+  }
+  [dir="rtl"] .ds-2col-stacked > .group-right {
+    float: left;
+  }
+  .ds-2col-stacked > .group-footer {
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-2col template.
+  */
+  .ds-2col > .group-left {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-2col > .group-left {
+    float: right;
+  }
+  .ds-2col > .group-right {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-2col > .group-right {
+    float: right;
+  }
+  /**
+  * @file
+  * Styling for the ds-2col template.
+  */
+  .ds-2col .inner > .group-left {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-2col .inner > .group-left {
+    float: right;
+  }
+  .ds-2col .inner > .group-right {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-2col .inner > .group-right {
+    float: right;
+  }
+  .ds-2col > .inner {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ds-2col > .inner:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .ds-2col.group-one-column .inner > .group-left,
+  .ds-2col.group-one-column .inner > .group-right {
+    width: 100%;
+    float: none;
+  }
+  /**
+  * @file
+  * Styling for the ds-3col-equal template.
+  */
+  .ds-3col-equal > .group-left {
+    width: 33%;
+    float: left;
+    /* LTR */
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal > .group-left {
+    float: right;
+  }
+  .ds-3col-equal > .group-middle {
+    width: 34%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal > .group-middle {
+    float: right;
+  }
+  .ds-3col-equal .inner > .group-right {
+    width: 33%;
+    float: right;
+    /* LTR */
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal .inner > .group-right {
+    float: left;
+  }
+  .ds-3col-equal .inner > .group-left {
+    width: 33%;
+    float: left;
+    /* LTR */
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal .inner > .group-left {
+    float: right;
+  }
+  .ds-3col-equal .inner > .group-middle {
+    width: 34%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal .inner > .group-middle {
+    float: right;
+  }
+  .ds-3col-equal .inner > .group-right {
+    width: 33%;
+    float: right;
+    /* LTR */
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-3col-equal .inner > .group-right {
+    float: left;
+  }
+  .ds-3col-equal > .inner {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ds-3col-equal > .inner:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-3col-stacked-equal template.
+  */
+  .ds-3col-stacked-equal > .group-header {
+    clear: both;
+  }
+  .ds-3col-stacked-equal > .group-left {
+    width: 33%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-equal > .group-left {
+    float: right;
+  }
+  .ds-3col-stacked-equal > .group-middle {
+    width: 34%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-equal > .group-middle {
+    float: right;
+  }
+  .ds-3col-stacked-equal > .group-right {
+    width: 33%;
+    float: right;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-equal > .group-right {
+    float: left;
+  }
+  .ds-3col-stacked-equal > .group-footer {
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-3col-stacked-fluid template.
+  */
+  .ds-3col-stacked-fluid > .group-header {
+    clear: both;
+  }
+  .ds-3col-stacked-fluid > .group-left {
+    width: 25%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-fluid > .group-left {
+    float: right;
+  }
+  .ds-3col-stacked-fluid > .group-middle {
+    width: 100%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-fluid > .group-middle {
+    float: right;
+  }
+  .ds-3col-stacked-fluid.group-one-sidebar > .group-middle {
+    width: 75%;
+  }
+  .ds-3col-stacked-fluid.group-two-sidebars > .group-middle {
+    width: 50%;
+  }
+  .ds-3col-stacked-fluid > .group-right {
+    width: 25%;
+    float: right;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked-fluid > .group-right {
+    float: left;
+  }
+  .ds-3col-stacked-fluid > .group-footer {
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-3col-stacked template.
+  */
+  .ds-3col-stacked > .group-header {
+    clear: both;
+  }
+  .ds-3col-stacked > .group-left {
+    width: 25%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked > .group-left {
+    float: right;
+  }
+  .ds-3col-stacked > .group-middle {
+    width: 50%;
+    float: left;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked > .group-middle {
+    float: right;
+  }
+  .ds-3col-stacked > .group-right {
+    width: 25%;
+    float: right;
+    /* LTR */
+  }
+  [dir="rtl"] .ds-3col-stacked > .group-right {
+    float: left;
+  }
+  .ds-3col-stacked > .group-footer {
+    clear: both;
+  }
+  /**
+  * @file
+  * Styling for the ds-3col template.
+  */
+  .ds-3col > .group-left {
+    width: 25%;
+    float: left;
+    /* LTR */
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col > .group-left {
+    float: right;
+  }
+  .ds-3col > .group-middle {
+    width: 50%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-3col > .group-middle {
+    float: right;
+  }
+  .ds-3col > .group-right {
+    width: 25%;
+    float: right;
+    /* LTR */
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-3col > .group-right {
+    float: left;
+  }
+  /**
+  * @file
+  * Styling for the ds-4col template.
+  */
+  .ds-4col > .group-first {
+    width: 25%;
+    float: left;
+    /* LTR */
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-4col > .group-first {
+    float: right;
+  }
+  .ds-4col > .group-second {
+    width: 25%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-4col > .group-second {
+    float: right;
+  }
+  .ds-4col > .group-third {
+    width: 25%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-4col > .group-third {
+    float: right;
+  }
+  .ds-4col > .group-fourth {
+    width: 25%;
+    float: left;
+    /* LTR */
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-4col > .group-fourth {
+    float: right;
+  }
+  /**
+  * @file
+  * Styling for the ds_2col_fluid template.
+  */
+  .ds-2col-fluid > .group-left {
+    float: left;
+    /* LTR */
+    width: 50%;
+    padding-right: 10px;
+  }
+  [dir="rtl"] .ds-2col-fluid > .group-left {
+    float: right;
+  }
+  .ds-2col-fluid > .group-right {
+    float: right;
+    /* LTR */
+    width: 50%;
+    padding-left: 10px;
+  }
+  [dir="rtl"] .ds-2col-fluid > .group-right {
+    float: left;
+  }
+  .ds-2col-fluid.group-one-column > .group-left,
+  .ds-2col-fluid.group-one-column > .group-right {
+    width: 100%;
+    float: none;
+  }
+  /**
+  * @file
+  * Display Suite Two Column 66 33 stylesheet.
+  */
+  .ds-two-columns .inner > .ds-left {
+    float: left;
+    width: 66.6%;
+  }
+  .ds-two-columns .inner > .ds-right {
+    float: left;
+    width: 33.3%;
+  }
+  .ds-cta-two-columns .inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .ds-cta-two-columns .inner .ds-left {
+    -webkit-box-flex: 1;
+            flex: 1 1 74%;
+  }
+  .ds-cta-two-columns .inner .ds-right {
+    -webkit-box-flex: 1;
+            flex: 1 1 25%;
+    text-align: center;
+  }
+}
+
 img, media {
   max-width: 100%;
   height: auto;
@@ -3283,13 +3765,27 @@ table {
 }
 
 td, th {
-  padding: 10px;
+  padding: 5px 10px;
   vertical-align: middle;
 }
 
 th {
   background-color: #fffbf0;
   vertical-align: bottom;
+}
+
+form .field-multiple-table th.field-label {
+  padding: 5px 10px;
+}
+
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle {
+  padding: 0;
+}
+
+.draggable a.tabledrag-handle {
+  margin-left: 0;
+  height: 22px;
+  width: 20px;
 }
 
 table.table-hover tr:nth-child(even):hover td {
@@ -3312,7 +3808,7 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 18px;
   line-height: 1.5em;
-  color: #333333;
+  color: #555;
 }
 
 a:link, a:visited {
@@ -3332,6 +3828,12 @@ strong, b {
   font-weight: bold;
 }
 
+.l-main ul li {
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGFBMVEUAAABERERERERERERERERERERERERERESMa+BPAAAAB3RSTlMAGjG+6/P1wTTolgAAACZJREFUCFtjYIAAJzBVrgAmi8AkmFNeHgAiywRAZCJIHMxkMARiALmpBpvY4YtZAAAAAElFTkSuQmCC);
+  line-height: 1.2em;
+  padding-bottom: 0.5em;
+}
+
 ul, ol {
   margin-bottom: 1em;
 }
@@ -3339,6 +3841,18 @@ ul, ol {
 ul li, ol li {
   list-style-position: outside;
   margin-left: 1em;
+}
+
+ul.links.inline {
+  display: block;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul.links.inline li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 p {
@@ -3407,7 +3921,7 @@ cite, q {
   font-size: 0.95em;
   font-style: italic;
   font-weight: 300;
-  color: #404040;
+  color: #626262;
 }
 
 cite {
@@ -3487,11 +4001,221 @@ footer a:active, footer a.active {
   color: #fff;
 }
 
+.comment-add a {
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 0;
+  background-clip: padding-box;
+  background-color: #325D77;
+  padding: 3px 10px;
+  font-size: 0.7em;
+}
+
+.comment-add a:link, .comment-add a:visited {
+  background-color: #325D77;
+}
+
+.comment-add a:hover, .comment-add a:focus, .comment-add a:active {
+  background-color: #3a6b89;
+}
+
+.comment-form {
+  padding: 10px 20px;
+  margin-top: 40px;
+  border: solid 1px #325D77;
+  border-left: solid 3px #BA8748;
+  font-size: 0.85em;
+}
+
 .comment-wrapper {
   padding: 20px 0;
   margin-top: 40px;
-  border-top: dotted 1px #555;
+  border-top: solid 1px #325D77;
   font-size: 0.85em;
+}
+
+.comment {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: solid 1px #ddd;
+  margin-bottom: 20px;
+}
+
+.comment .submitted {
+  font-size: 0.8em;
+}
+
+.comment.comment-by-node-author {
+  border-left: solid 3px #BA8748;
+}
+
+.comment.comment-by-node-viewer {
+  border-left: solid 3px #325D77;
+}
+
+.comment ul.links {
+  padding: 0;
+  margin: 10px 0;
+  text-align: right;
+  display: block;
+}
+
+.comment ul.links li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.comment ul.links li a {
+  display: inline-block;
+}
+
+.comment ul.links li.comment-edit a,
+.comment ul.links li.comment-reply a {
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 0;
+  background-clip: padding-box;
+  background-color: #BA9C48;
+  padding: 0 10px;
+}
+
+.comment ul.links li.comment-edit a:link, .comment ul.links li.comment-edit a:visited,
+.comment ul.links li.comment-reply a:link,
+.comment ul.links li.comment-reply a:visited {
+  background-color: #BA9C48;
+}
+
+.comment ul.links li.comment-edit a:hover, .comment ul.links li.comment-edit a:focus, .comment ul.links li.comment-edit a:active,
+.comment ul.links li.comment-reply a:hover,
+.comment ul.links li.comment-reply a:focus,
+.comment ul.links li.comment-reply a:active {
+  background-color: #c1a65b;
+}
+
+.front h1 {
+  text-align: center;
+}
+
+.front .field-name-body,
+.front .tabs--primary-wrapper {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.front .field-name-body:after,
+.front .tabs--primary-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.paragraphs-item-7 {
+  background-color: #325D77;
+  color: #fff;
+}
+
+.paragraphs-item-7 h2 {
+  color: #BA8748;
+}
+
+.paragraphs-item-9 .icon {
+  text-align: center;
+}
+
+.paragraphs-item-9 h2 {
+  text-align: center;
+  border-top: solid 1px #325D77;
+  border-bottom: solid 1px #325D77;
+}
+
+.paragraphs-item-9 .field-name-field-icon-first {
+  color: #BA9C48;
+}
+
+.paragraphs-item-9 .field-name-field-icon-second {
+  color: #325D77;
+}
+
+.paragraphs-item-9 .field-name-field-text-second .button {
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 0;
+  background-clip: padding-box;
+  background-color: #325D77;
+}
+
+.paragraphs-item-9 .field-name-field-text-second .button:link, .paragraphs-item-9 .field-name-field-text-second .button:visited {
+  background-color: #325D77;
+}
+
+.paragraphs-item-9 .field-name-field-text-second .button:hover, .paragraphs-item-9 .field-name-field-text-second .button:focus, .paragraphs-item-9 .field-name-field-text-second .button:active {
+  background-color: #3a6b89;
+}
+
+.paragraphs-item-9 .field-name-field-icon-third {
+  color: #072B40;
+}
+
+.paragraphs-item-9 .field-name-field-text-third .button {
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 0;
+  background-clip: padding-box;
+  background-color: #072B40;
+}
+
+.paragraphs-item-9 .field-name-field-text-third .button:link, .paragraphs-item-9 .field-name-field-text-third .button:visited {
+  background-color: #072B40;
+}
+
+.paragraphs-item-9 .field-name-field-text-third .button:hover, .paragraphs-item-9 .field-name-field-text-third .button:focus, .paragraphs-item-9 .field-name-field-text-third .button:active {
+  background-color: #0a3a57;
 }
 
 body {
@@ -3517,7 +4241,7 @@ body {
 }
 
 .breadcrumb a:link, .breadcrumb a:visited {
-  color: #333333;
+  color: #555;
 }
 
 .breadcrumb a:hover, .breadcrumb a:focus {
@@ -3545,11 +4269,11 @@ ul.tabs--primary li {
 ul.tabs--primary li a {
   display: block;
   padding: 2px 25px;
-  border-bottom: solid 1px #737373;
+  border-bottom: solid 1px #959595;
 }
 
 ul.tabs--primary li a:link, ul.tabs--primary li a:visited {
-  color: #737373;
+  color: #959595;
   text-decoration: none;
 }
 
@@ -3619,21 +4343,45 @@ ul.sf-main-menu ul {
   background-color: #819FB1;
 }
 
-#block-menu-menu-submissions ul {
+#block-menu-menu-submissions .content ul {
   margin: 10px 0;
   padding: 0;
+  border-top: #BA8748 solid 1px;
 }
 
-#block-menu-menu-submissions ul li {
-  display: inline-block;
-  padding: 0 10px 0 0;
+#block-menu-menu-submissions .content ul li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-#block-menu-menu-submissions ul li a {
-  display: inline-block;
-  border-top: #BA8748 solid 1px;
+#block-menu-menu-submissions .content ul li a {
+  display: block;
+  padding: 6px 10px;
   border-bottom: #BA8748 solid 1px;
+}
+
+#block-menu-menu-submissions .content ul li a:link, #block-menu-menu-submissions .content ul li a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+#block-menu-menu-submissions .content ul li a:hover, #block-menu-menu-submissions .content ul li a:focus {
+  color: #BA8748;
+}
+
+#block-menu-menu-submissions .content ul li a:active, #block-menu-menu-submissions .content ul li a.active {
+  color: #0F7A96;
+}
+
+#block-menu-menu-submissions .content ul li a:hover, #block-menu-menu-submissions .content ul li a:focus, #block-menu-menu-submissions .content ul li a:active, #block-menu-menu-submissions .content ul li a.active {
+  background-color: #fcf9f6;
+}
+
+#block-menu-menu-submissions {
+  background-color: #f5f5f5;
+  border: solid 2px #BA8748;
+  padding: 20px;
 }
 
 .sponsor-table th {
@@ -3687,15 +4435,49 @@ ul.sf-main-menu ul {
 
 .ds-3col-stacked-fluid.node-session .group-right {
   padding: 10px;
-  background-color: #819FB1;
+  background-color: #f5f5f5;
+  border: solid 1px #ddd;
+  font-size: 0.863em;
+}
+
+.ds-3col-stacked-fluid.node-session .group-right .field {
+  margin-bottom: 1em;
 }
 
 .ds-3col-stacked-fluid.node-session .group-middle {
   padding-right: 20px;
 }
 
+.node-session-form .field-name-field-room,
+.node-session-form .field-name-field-time,
+.node-session-form .field-name-field-status {
+  background-color: #819FB1;
+}
+
+.node-session-form .field-name-field-room .form-item,
+.node-session-form .field-name-field-time .form-item {
+  padding: 20px;
+}
+
 .entity-paragraphs-item {
   padding: 5% 0;
+}
+
+.entity-paragraphs-item .icon {
+  font-size: 10vw;
+  padding-bottom: 20px;
+}
+
+.front .entity-paragraphs-item .inner {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.front .entity-paragraphs-item .inner:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .paragraphs-item-text-and-google-map iframe {
@@ -3790,6 +4572,21 @@ ul.sf-main-menu ul {
 
 .l-secondary .container:active, .l-secondary .container.active {
   color: #E4C97E;
+}
+
+.region-sidebar-second {
+  border-left: solid 1px #819FB1;
+  padding-left: 20px;
+}
+
+.region-sidebar-second .block {
+  margin-bottom: 40px;
+}
+
+.region-sidebar-second h2 {
+  background-color: #819FB1;
+  color: #fff;
+  padding: 2px 10px;
 }
 
 .l-footer {

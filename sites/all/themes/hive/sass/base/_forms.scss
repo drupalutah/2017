@@ -39,7 +39,44 @@ button,
 	@include button;
 }
 
-
+.form-type-managed-file {
+	border: solid 1px $ltgray;
+	padding: 5px 15px;
+}
+.file-widget.form-managed-file {
+	background-color: $smoke;
+	padding: 10px;
+	.form-file {
+		width: 75%;
+	}
+	.form-submit {
+		width: 25%;
+		padding: 5px 10px;
+	}
+}
+.form-type-radios {
+	padding: 10px 20px;
+	border: solid 1px $ltgray;
+}
+.form-type-radios > label {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: solid 1px $ltgray;
+}
+.form-type-radio label {
+	font-size: 0.863em;
+}
+.filter-wrapper {
+	font-size: 0.75em;
+	line-height: 1em;
+	margin-bottom: 20px;
+}
+.form-type-select {
+	.form-item > label {
+		font-weight: normal;
+		font-size: 0.863em;
+	}
+}
 // Fixing table draggers.
 a.tabledrag-handle {
 	height: 22px;

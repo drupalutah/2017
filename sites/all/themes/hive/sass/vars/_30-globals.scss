@@ -2,11 +2,6 @@
 // Gloabl Vars.
 // ------------------------------------
 
-// Messages and feedback colors.
-$error: red;
-$warning: yellow;
-$information: green;
-
 // font-family: 'Unica One', cursive;
 // font-family: 'Karla', sans-serif;
 
@@ -14,7 +9,7 @@ $information: green;
 $body_font:  'Karla', sans-serif;; // Default font.
 $body_fontsize: 18px; // Base or root font-size.
 $body_lineheight: 1.5em;
-$body_fontcolor: $dkgray; // Default font color.
+$body_fontcolor: #555; // Default font color.
 $body_bg_color: $kinda_black; // Page background color.
 
 // Titles and Headings.
@@ -95,7 +90,7 @@ $tabs_secondary_bg_active: $ltblue;
 
 
 // Tables.
-$table_cell_padding: 10px;
+$table_cell_padding: 5px 10px;
 $row_even: mix($color-secondary-1-1, white, 20%); // lighten($blue, 30%) Table even row styles
 $row_odd: mix($color-complement-1, white, 10%); // Table odd row styles
 $table_header: $row_even; // Table header row styles

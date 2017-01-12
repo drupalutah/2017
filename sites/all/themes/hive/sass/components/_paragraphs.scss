@@ -1,5 +1,14 @@
 .entity-paragraphs-item {
   padding: 5% 0;
+
+  .icon {
+    font-size: 10vw;
+    padding-bottom: $vspace;
+  }
+}
+
+.front .entity-paragraphs-item .inner {
+  @include container;
 }
 
 .paragraphs-item-text-and-google-map iframe {

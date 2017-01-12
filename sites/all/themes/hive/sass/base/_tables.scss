@@ -12,6 +12,17 @@ th {
   vertical-align: bottom;
 }
 
+form .field-multiple-table th.field-label {
+  padding: $table_cell_padding;
+}
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle {
+    padding: 0;
+}
+.draggable a.tabledrag-handle {
+  margin-left: 0;
+  height: 22px;
+  width: 20px;
+}
 table.table-hover tr:nth-child(even):hover td {
   background-color: darken($row_even, 3%);
 }
