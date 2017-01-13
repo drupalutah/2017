@@ -87,13 +87,13 @@
     @include span(3);
   }
   .region-footer-b {
-    @include span(3);
+    @include span(last 9);
   }
   .region-footer-c {
-    @include span(3);
+    @include span(6);
   }
   .region-footer-d {
-    @include span(last 3);
+    @include span(last 6);
   }
 }
 
@@ -302,7 +302,6 @@
   .ds-3col-equal > .inner {
     @include container;
   }
-
 
   /**
   * @file

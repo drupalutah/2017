@@ -10,3 +10,8 @@
     position: relative; // this is for the local tasks.
   }
 }
+
+.not-front .l-main {
+  padding-left: $hspace;
+  padding-right: $hspace;
+}

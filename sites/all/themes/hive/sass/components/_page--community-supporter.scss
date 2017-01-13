@@ -1,0 +1,19 @@
+.view-community-supporter {
+  .item-list ul {
+    margin: 20px 0;
+    li {
+      list-style: none;
+      margin-left: 0;
+      padding: 10px 0;
+    }
+    li:before {
+      @extend .fa;
+      @extend .fa-trophy;
+      color: $color-primary-4;
+    }
+    @include breakpoint($medium) {
+      column-count: 2;
+      font-size: 1.25em;
+    }
+  }
+}

@@ -13,11 +13,17 @@ strong, b {
   font-weight: bold;
 }
 
-.l-main {
-  ul li {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAGFBMVEUAAABERERERERERERERERERERERERERESMa+BPAAAAB3RSTlMAGjG+6/P1wTTolgAAACZJREFUCFtjYIAAJzBVrgAmi8AkmFNeHgAiywRAZCJIHMxkMARiALmpBpvY4YtZAAAAAElFTkSuQmCC);
+ul.carrot {
+  li {
+    list-style: none;
     line-height: 1.2em;
     padding-bottom: 0.5em;
+    margin-left: 0;
+    &:before {
+      @extend .fa;
+      @extend .fa-caret-right;
+      padding-right: 5px;
+    }
   }
 }
 

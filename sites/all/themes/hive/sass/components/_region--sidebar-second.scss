@@ -1,13 +1,21 @@
 .region-sidebar-second {
-  border-left: solid 1px $color-complement-1;
-  padding-left: 20px;
+  margin-top: 40px;
+
   .block {
     margin-bottom: 40px;
   }
+
   h2 {
     // border-bottom: dotted 1px $color-complement-1;
     background-color: $color-complement-1;
     color: #fff;
     padding: 2px 10px;
+  }
+}
+@include breakpoint($medium) {
+  .region-sidebar-second {
+    margin-top: 0;
+    border-left: solid 1px $color-complement-1;
+    padding-left: 20px;
   }
 }

@@ -3,6 +3,7 @@
   color: $header_fontcolor;
   position: relative;
   background: url(../images/header-comb.jpg) center center;
+  // border-top: solid 15px $color-complement-0;
 
   .container {
     @include container;
