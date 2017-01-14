@@ -41,7 +41,37 @@ ul.sf-main-menu li.active-trail > a {
 }
 ul.sf-main-menu ul {
   background-color: $color-complement-1;
-
   li a {
+  }
+}
+
+
+
+#superfish-1-toggle {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+#menu-1147-1 {
+  background-color: $color-complement-3;
+}
+
+@include breakpoint($medium) {
+  #menu-1147-1 {
+    float: right;
+    a {
+      &:link,
+      &:visited {
+        color: $menu_hover;
+        background-color: $menu_bg_hover;
+      }
+
+      &:hover,
+      &:focus {
+        color: $menu;
+        background-color: $color-complement-3;
+      }
+    }
   }
 }

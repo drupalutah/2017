@@ -10,7 +10,7 @@
 function dcu_session_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_attachments'
+  // Exported field_base: 'field_attachments'.
   $field_bases['field_attachments'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -36,36 +36,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_category'
-  $field_bases['field_category'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_category',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'category',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_experience_level'
+  // Exported field_base: 'field_experience_level'.
   $field_bases['field_experience_level'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -94,7 +65,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_links'
+  // Exported field_base: 'field_links'.
   $field_bases['field_links'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -126,7 +97,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_room'
+  // Exported field_base: 'field_room'.
   $field_bases['field_room'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -157,7 +128,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_status'
+  // Exported field_base: 'field_status'.
   $field_bases['field_status'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -186,7 +157,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_time'
+  // Exported field_base: 'field_time'.
   $field_bases['field_time'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -216,7 +187,7 @@ function dcu_session_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_track'
+  // Exported field_base: 'field_track'.
   $field_bases['field_track'] = array(
     'active' => 1,
     'cardinality' => 1,

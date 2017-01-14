@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Pets Saved install file which doesn't install anything, only deletes vars.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function social_media_uninstall() {
+  variable_del('social_media_title');
+  variable_del('social_media_text');
+  variable_del('social_media_facebook');
+  variable_del('social_media_twitter');
+  variable_del('social_media_instagram');
+  variable_del('social_media_google');
+  variable_del('social_media_email');
+  variable_del('social_media_slack');
+}

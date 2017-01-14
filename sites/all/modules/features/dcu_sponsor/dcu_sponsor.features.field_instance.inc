@@ -10,7 +10,7 @@
 function dcu_sponsor_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-sponsor-body'
+  // Exported field_instance: 'node-sponsor-body'.
   $field_instances['node-sponsor-body'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function dcu_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_logo'
+  // Exported field_instance: 'node-sponsor-field_logo'.
   $field_instances['node-sponsor-field_logo'] = array(
     'bundle' => 'sponsor',
     'deleted' => 0,
@@ -104,7 +104,7 @@ function dcu_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_level'
+  // Exported field_instance: 'node-sponsor-field_sponsor_level'.
   $field_instances['node-sponsor-field_sponsor_level'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -141,7 +141,7 @@ function dcu_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_website'
+  // Exported field_instance: 'node-sponsor-field_website'.
   $field_instances['node-sponsor-field_website'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,

@@ -40,10 +40,10 @@
   // Right/Second Sidebar.
   .one-sidebar.sidebar-second {
     .l-content {
-      @include span(9);
+      @include span(8);
     }
     .region-sidebar-second {
-      @include span(last 3);
+      @include span(last 4);
     }
   }
 
@@ -97,7 +97,17 @@
   }
 }
 
-@include breakpoint($large) {}
+@include breakpoint($large) {
+  // Right/Second Sidebar.
+  .one-sidebar.sidebar-second {
+    .l-content {
+      @include span(9);
+    }
+    .region-sidebar-second {
+      @include span(last 3);
+    }
+  }
+}
 
 @include breakpoint($xlarge) {}
 

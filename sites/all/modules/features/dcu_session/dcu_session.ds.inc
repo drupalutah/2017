@@ -17,11 +17,6 @@ function dcu_session_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'session';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'back_to_sessions' => array(
-      'weight' => '10',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
     'links' => array(
       'weight' => '12',
       'label' => 'hidden',
@@ -41,11 +36,6 @@ function dcu_session_ds_field_settings_info() {
       'weight' => '4',
       'label' => 'hidden',
       'format' => 'ds_picture_thumbnail',
-    ),
-    'rate_integration_2' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
     ),
   );
   $export['node|session|default'] = $ds_fieldsetting;
@@ -70,38 +60,30 @@ function dcu_session_ds_layout_settings_info() {
     'regions' => array(
       'middle' => array(
         0 => 'body',
-        1 => 'rate_integration_2',
-        2 => 'field_attachments',
-        3 => 'field_links',
+        1 => 'field_attachments',
+        2 => 'field_links',
       ),
       'right' => array(
-        4 => 'ds_user_picture',
-        5 => 'author',
-        6 => 'field_status',
-        7 => 'field_experience_level',
-        8 => 'field_category',
-        9 => 'field_track',
-        10 => 'back_to_sessions',
-        11 => 'flag_spam',
+        3 => 'ds_user_picture',
+        4 => 'author',
+        5 => 'field_status',
+        6 => 'field_experience_level',
+        7 => 'field_track',
       ),
       'footer' => array(
-        12 => 'links',
-        13 => 'comments',
+        8 => 'links',
+        9 => 'comments',
       ),
     ),
     'fields' => array(
       'body' => 'middle',
-      'rate_integration_2' => 'middle',
       'field_attachments' => 'middle',
       'field_links' => 'middle',
       'ds_user_picture' => 'right',
       'author' => 'right',
       'field_status' => 'right',
       'field_experience_level' => 'right',
-      'field_category' => 'right',
       'field_track' => 'right',
-      'back_to_sessions' => 'right',
-      'flag_spam' => 'right',
       'links' => 'footer',
       'comments' => 'footer',
     ),
@@ -118,6 +100,7 @@ function dcu_session_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|session|default'] = $ds_layout;
 

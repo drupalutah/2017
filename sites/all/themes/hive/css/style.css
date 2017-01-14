@@ -3235,12 +3235,12 @@ a.tabledrag-handle .handle {
     margin-right: 1.69492%;
   }
   .one-sidebar.sidebar-second .l-content {
-    width: 74.57627%;
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
   .one-sidebar.sidebar-second .region-sidebar-second {
-    width: 23.72881%;
+    width: 32.20339%;
     float: right;
     margin-right: 0;
   }
@@ -3319,6 +3319,19 @@ a.tabledrag-handle .handle {
   }
   .region-footer-d {
     width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 940px) {
+  .one-sidebar.sidebar-second .l-content {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  .one-sidebar.sidebar-second .region-sidebar-second {
+    width: 23.72881%;
     float: right;
     margin-right: 0;
   }
@@ -4006,6 +4019,19 @@ footer a:active, footer a.active {
   color: #fff;
 }
 
+.social-media-icons ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.social-media-icons ul li {
+  list-style: none;
+  padding: 0 10px 0 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 2em;
+}
+
 .comment-add a {
   color: #ffffff !important;
   text-align: center;
@@ -4266,13 +4292,15 @@ body {
   color: #fff;
 }
 
-#block-menu-menu-footer .content ul.menu {
+#block-menu-menu-footer .content ul.menu,
+#block-system-user-menu .content ul.menu {
   margin: 0;
   padding: 0;
   text-align: right;
 }
 
-#block-menu-menu-footer .content ul.menu li {
+#block-menu-menu-footer .content ul.menu li,
+#block-system-user-menu .content ul.menu li {
   list-style: none;
   display: inline-block;
 }
@@ -4368,6 +4396,31 @@ ul.sf-main-menu ul {
   background-color: #819FB1;
 }
 
+#superfish-1-toggle {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+#menu-1147-1 {
+  background-color: #19445D;
+}
+
+@media (min-width: 768px) {
+  #menu-1147-1 {
+    float: right;
+  }
+  #menu-1147-1 a:link, #menu-1147-1 a:visited {
+    color: #fff;
+    background-color: #BA8748;
+  }
+  #menu-1147-1 a:hover, #menu-1147-1 a:focus {
+    color: #ffffff;
+    background-color: #19445D;
+  }
+}
+
 #block-menu-menu-submissions .content ul {
   margin: 10px 0;
   padding: 0;
@@ -4407,6 +4460,10 @@ ul.sf-main-menu ul {
   background-color: #f5f5f5;
   border: solid 2px #BA8748;
   padding: 20px;
+}
+
+.paragraphs-item-5 {
+  overflow-x: scroll;
 }
 
 .sponsor-table th {
@@ -4743,6 +4800,10 @@ ul.sf-main-menu ul {
 .not-front .l-main {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.view-sessions .view-content {
+  overflow-x: scroll;
 }
 
 .view.sponsors-platinum .item-list ul {

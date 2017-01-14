@@ -10,7 +10,7 @@
 function dcu_wish_list_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-wish-body'
+  // Exported field_instance: 'node-wish-body'.
   $field_instances['node-wish-body'] = array(
     'bundle' => 'wish',
     'default_value' => NULL,

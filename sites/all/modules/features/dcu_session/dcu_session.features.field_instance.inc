@@ -10,7 +10,7 @@
 function dcu_session_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-session-body'
+  // Exported field_instance: 'node-session-body'.
   $field_instances['node-session-body'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_attachments'
+  // Exported field_instance: 'node-session-field_attachments'.
   $field_instances['node-session-field_attachments'] = array(
     'bundle' => 'session',
     'deleted' => 0,
@@ -96,44 +96,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_category'
-  $field_instances['node-session-field_category'] = array(
-    'bundle' => 'session',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_category',
-    'label' => 'Category',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-session-field_experience_level'
+  // Exported field_instance: 'node-session-field_experience_level'.
   $field_instances['node-session-field_experience_level'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -170,7 +133,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_links'
+  // Exported field_instance: 'node-session-field_links'.
   $field_instances['node-session-field_links'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -226,7 +189,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_room'
+  // Exported field_instance: 'node-session-field_room'.
   $field_instances['node-session-field_room'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -235,9 +198,8 @@ function dcu_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'teaser' => array(
@@ -263,7 +225,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_status'
+  // Exported field_instance: 'node-session-field_status'.
   $field_instances['node-session-field_status'] = array(
     'bundle' => 'session',
     'default_value' => array(
@@ -304,7 +266,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_time'
+  // Exported field_instance: 'node-session-field_time'.
   $field_instances['node-session-field_time'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -313,9 +275,8 @@ function dcu_session_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 11,
       ),
       'teaser' => array(
@@ -341,7 +302,7 @@ function dcu_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_track'
+  // Exported field_instance: 'node-session-field_track'.
   $field_instances['node-session-field_track'] = array(
     'bundle' => 'session',
     'default_value' => array(
@@ -386,7 +347,6 @@ function dcu_session_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Attachments');
   t('Body');
-  t('Category');
   t('Experience Level');
   t('Links');
   t('Room');

@@ -1,0 +1,6 @@
+name = Social Media Icons
+description = Adds a block that allows you to insert social media icons and links via an admin interface.
+core = 7.x
+package = Other
+
+configure = admin/content/social_media

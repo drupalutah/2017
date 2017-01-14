@@ -40,15 +40,10 @@ function dcu_wish_list_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = 'Is there a topic you\'d like to learn about? Log in and create a "Wish" with what you\'d like to learn. These wishes will give others an idea of what they could present on. ';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
-  /* Relationship: Content: Votes */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['votingapi_vote']['id'] = 'votingapi_vote';
   $handler->display->display_options['relationships']['votingapi_vote']['table'] = 'node';
   $handler->display->display_options['relationships']['votingapi_vote']['field'] = 'votingapi_vote';
-  $handler->display->display_options['relationships']['votingapi_vote']['votingapi'] = array(
-    'value_type' => '',
-    'tag' => 'metoo',
-  );
-  $handler->display->display_options['relationships']['votingapi_vote']['current_user'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';

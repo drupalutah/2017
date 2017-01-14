@@ -265,47 +265,27 @@ function dcu_session_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Relationship: Content: Votes */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['votingapi_vote']['id'] = 'votingapi_vote';
   $handler->display->display_options['relationships']['votingapi_vote']['table'] = 'node';
   $handler->display->display_options['relationships']['votingapi_vote']['field'] = 'votingapi_vote';
-  $handler->display->display_options['relationships']['votingapi_vote']['votingapi'] = array(
-    'value_type' => 'points',
-    'tag' => 'vote',
-  );
-  $handler->display->display_options['relationships']['votingapi_vote']['current_user'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
-  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Experience Level */
   $handler->display->display_options['fields']['field_experience_level']['id'] = 'field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['table'] = 'field_data_field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['field'] = 'field_experience_level';
   $handler->display->display_options['fields']['field_experience_level']['label'] = 'Level';
-  $handler->display->display_options['fields']['field_experience_level']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_experience_level']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Track */
   $handler->display->display_options['fields']['field_track']['id'] = 'field_track';
   $handler->display->display_options['fields']['field_track']['table'] = 'field_data_field_track';
   $handler->display->display_options['fields']['field_track']['field'] = 'field_track';
-  $handler->display->display_options['fields']['field_track']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_track']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Info';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_category]<br>
-[field_experience_level]';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -320,15 +300,6 @@ function dcu_session_views_default_views() {
   $handler->display->display_options['fields']['new_comments']['label'] = 'New';
   $handler->display->display_options['fields']['new_comments']['separator'] = '';
   $handler->display->display_options['fields']['new_comments']['link_to_comment'] = FALSE;
-  /* Field: Votes: Value */
-  $handler->display->display_options['fields']['value']['id'] = 'value';
-  $handler->display->display_options['fields']['value']['table'] = 'votingapi_vote';
-  $handler->display->display_options['fields']['value']['field'] = 'value';
-  $handler->display->display_options['fields']['value']['relationship'] = 'votingapi_vote';
-  $handler->display->display_options['fields']['value']['label'] = 'Vote';
-  $handler->display->display_options['fields']['value']['precision'] = '0';
-  $handler->display->display_options['fields']['value']['separator'] = '';
-  $handler->display->display_options['fields']['value']['appearance'] = 'rate_views_widget_disabled';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -372,25 +343,6 @@ function dcu_session_views_default_views() {
   $handler->display->display_options['filters']['field_track_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_track_tid']['vocabulary'] = 'track';
   $handler->display->display_options['filters']['field_track_tid']['error_message'] = FALSE;
-  /* Filter criterion: Content: Category (field_category) */
-  $handler->display->display_options['filters']['field_category_tid']['id'] = 'field_category_tid';
-  $handler->display->display_options['filters']['field_category_tid']['table'] = 'field_data_field_category';
-  $handler->display->display_options['filters']['field_category_tid']['field'] = 'field_category_tid';
-  $handler->display->display_options['filters']['field_category_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_category_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_category_tid']['expose']['operator_id'] = 'field_category_tid_op';
-  $handler->display->display_options['filters']['field_category_tid']['expose']['label'] = 'Category';
-  $handler->display->display_options['filters']['field_category_tid']['expose']['operator'] = 'field_category_tid_op';
-  $handler->display->display_options['filters']['field_category_tid']['expose']['identifier'] = 'field_category_tid';
-  $handler->display->display_options['filters']['field_category_tid']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['field_category_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-  );
-  $handler->display->display_options['filters']['field_category_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_category_tid']['vocabulary'] = 'category';
-  $handler->display->display_options['filters']['field_category_tid']['error_message'] = FALSE;
   /* Filter criterion: Content: Experience Level (field_experience_level) */
   $handler->display->display_options['filters']['field_experience_level_tid']['id'] = 'field_experience_level_tid';
   $handler->display->display_options['filters']['field_experience_level_tid']['table'] = 'field_data_field_experience_level';
@@ -428,10 +380,6 @@ function dcu_session_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2>Thanks for Voting!</h2>
-<p><strong>You must be logged in to vote.</strong> Add your vote to the sessions that are the most interesting to you. Please get all your votes in before Jan 31st.</p>
-<p>**This voting isn\'t scientific. Your votes will help us better understand how to build the session schedule. Thanks for the input!</p>
-';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'sessions/proposed';
   $handler->display->display_options['menu']['type'] = 'default tab';
