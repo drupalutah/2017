@@ -4822,4 +4822,37 @@ ul.sf-main-menu ul {
   list-style: none;
 }
 
+.view-sponsors {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.view-sponsors:before, .view-sponsors:after {
+  content: "";
+  display: table;
+}
+
+.view-sponsors:after {
+  clear: both;
+}
+
+.view-sponsors h3 {
+  border-bottom: dotted 1px #BA8748;
+  margin-bottom: 20px;
+}
+
+.view-sponsors .sponsor-row {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .view-sponsors .sponsor-row {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.view-sponsors {
+  @include clearfix;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  h3 {
+    border-bottom: dotted 1px $color-primary-0;
+    margin-bottom: 20px;
+  }
+    .sponsor-row {
+      text-align: center;
+      padding: 10px;
+    }
+  @include breakpoint($medium) {
+    .sponsor-row {
+      width: 25%;
+      float: left;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+}
